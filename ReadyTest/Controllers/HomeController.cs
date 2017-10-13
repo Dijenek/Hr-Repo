@@ -15,6 +15,7 @@ namespace ReadyTest.Controllers
 
         public ActionResult About()
         {
+            //This is only a test for git
             ViewBag.Message = "Something Something";
 
             return View();
