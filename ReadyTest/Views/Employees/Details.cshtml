@@ -42,9 +42,24 @@
             @Html.DisplayFor(model => model.sector)
         </dd>
 
-    </dl>
+    </dl>  
+    
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Index") 
+    <hr /> 
+    <div id="AddNewFields" >
+        @Ajax.ActionLink("Add new fields for this user","AddNewFieldsAction",null,
+       new AjaxOptions
+       {
+           UpdateTargetId = "AddNewFields",
+           InsertionMode = InsertionMode.Replace,
+           HttpMethod = "GET"
+       },
+       new { @class = "btn btn-primary" })       
+    </div>       
 </p>
+@section Scripts {
+    <script> src="~/Scripts/jquery.validate.unobtrusive.min.js" </script>
+}
