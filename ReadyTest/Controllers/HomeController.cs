@@ -17,6 +17,7 @@ namespace ReadyTest.Controllers
         {
 			//This is only a test for git
 			//Added new feature1
+            // Added another feature
 			ViewBag.Message = "Something Something";
 
             return View();
