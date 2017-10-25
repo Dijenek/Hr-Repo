@@ -32,6 +32,7 @@ namespace ReadyTest.Controllers
         {
             get
             {
+                // This is dummy change for develop branch
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
             private set 
