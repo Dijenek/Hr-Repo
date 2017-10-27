@@ -131,5 +131,12 @@ namespace ReadyTest.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult  AddNewFieldsAction()
+        {
+            List<FieldTypes> fieldTypes = db.FieldTypes.ToList();
+            return View("~/Views/FieldTypes/Index.cshtml", fieldTypes);
+        }
+
     }
 }
