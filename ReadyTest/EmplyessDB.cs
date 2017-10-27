@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using ReadyTest.Models;
+using System.Reflection.Emit;
 
 public class EmplyessDB : DbContext
 {
@@ -16,8 +17,9 @@ public class EmplyessDB : DbContext
 
     public EmplyessDB() : base("name=EmplyessDB")
     {
-    }
+    }    
 
-    public System.Data.Entity.DbSet<Employee> Employees { get; set; }    
+    public System.Data.Entity.DbSet<Employee> Employees { get; set; }
 
+    public System.Data.Entity.DbSet<ReadyTest.Models.FieldTypes> FieldTypes { get; set; }
 }
