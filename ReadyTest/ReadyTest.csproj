@@ -163,7 +163,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
-    <Compile Include="Models\FieldTypes.cs" />
+    <Compile Include="Models\Fields\FieldTypes.cs" />
     <Compile Include="Controllers\FieldTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -175,6 +175,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\EmployessDbInitializer.cs" />
+    <Compile Include="Models\Fields\TextField.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -253,6 +254,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Field\" />
     <Folder Include="Views\People\" />
   </ItemGroup>
   <ItemGroup>
