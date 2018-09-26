@@ -8,6 +8,7 @@ namespace ReadyTest.Controllers
 {
     public class HomeController : Controller
     {
+        // Another test for develop branch
         public ActionResult Index()
         {
             return View();

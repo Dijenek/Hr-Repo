@@ -22,4 +22,6 @@ public class EmplyessDB : DbContext
     public System.Data.Entity.DbSet<Employee> Employees { get; set; }
 
     public System.Data.Entity.DbSet<ReadyTest.Models.FieldTypes> FieldTypes { get; set; }
+
+    public System.Data.Entity.DbSet<ReadyTest.Models.Fields.TextField> TextFields { get; set; }
 }

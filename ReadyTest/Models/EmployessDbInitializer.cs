@@ -30,6 +30,13 @@ namespace ReadyTest.Models
             context.FieldTypes.Add(new FieldTypes { Name = "Numeric field" });
             context.FieldTypes.Add(new FieldTypes { Name = "Option list field" });
 
+            context.TextFields.Add(new Fields.TextField
+            {
+                Name = "Marko",
+                maxLength = 240,
+                defaultValue = "test"
+            });
+
             base.Seed(context);
         }
     }
