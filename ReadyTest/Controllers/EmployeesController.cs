@@ -51,8 +51,7 @@ namespace ReadyTest.Controllers
             if (ModelState.IsValid)
             {
                 try
-                {
-                    employee.startDate = DateTime.Now;
+                {                    
                     db.Employees.Add(employee);
                     db.SaveChanges();
                     return RedirectToAction("Index");
